@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Source+Code+Pro:wght@500&display=swap');
+:root {
+	--heading: #fcb883;
+	--input-bg:  #dbcbbf;
+	--input-border: #4ebf5d ;
+	--shadow: 4px 4px 15px -2px rgba(34, 62, 67, 0.6);
+	--font-color: #1f2933;
+}
+* {
+	margin: 0.3rem;
+	padding: 1rem;
+}
+body {font-family: 'Indie Flower', cursive;
+font-family: 'Source Code Pro', monospace;
+background-color:black;
+}
+.container {
+	display: block;
+	max-width: 550px;
+	margin: auto;
+	padding: 1rem;
+	border-radius: 8px;
+	box-shadow: var(--input-bg);
+}
+h1 {
+	text-align: center;
+	margin: 0.5rem auto;
+	font-weight: 500;
+	font-size: 40px;
+	color:  var(--heading);
+}
+p {
+	text-align: center;
+}
+input::placeholder {
+	color: #f0f0f0;
+}
+input {
+	color: #ffffff;
+	display: flex;
+	font-size: 18px;
+	width: 67%;
+	height: 10px;
+	padding: 1rem;
+	margin: 1rem auto;
+	border-radius: 50px;
+	background-color: var(--input-bg);
+	border: 3px solid var(--input-border);
+	box-shadow: var(--shadow);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+input:focus {
+	outline: none;
+}
+.button {
+	font-size: 18px;
+	display: block;
+	width: 30%;
+	margin: auto;
+	padding: 4px 15px;
+	border-radius: 50px;
+	color: #ffffff;
+	background-color: #fcb883;
+	border: 3px solid #fcb883;
+	cursor: pointer;
+	text-align: center;
+           	transition: all 250ms;
+	box-shadow: var(--shadow);
+}
+.button:hover {
+	transform: scale(1.1);
+              color: red;
+           background-color: black;
+}
+.button:focus {
+	outline: none;
+}
+
+#showBox {
+	margin-top: 3rem;
+	text-align: center;
+           color: #73db63;
+}
+table {
+	margin: 1rem auto;
+	table-layout: fixed;
+	border-collapse: collapse;
+           color: #fcb883;
+ 
+}
+table.tb-hide {
+	display: none;
+
+}
+
+td {
+	width: 50%;
+	font-size: 18px;
+	text-align: center;
+           color: #73db63;
+}
+th,{
+}
+td {
+	margin: auto;
+	padding: 0.5rem 2rem;
+	border: 3px solid green;
+}
